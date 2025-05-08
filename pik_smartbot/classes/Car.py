@@ -2,14 +2,14 @@ from dataclasses import dataclass
 
 @ dataclass
 class Car:
-    _id_car: int
+    _id: int
     _brand: str
     _model: str
-    _number_car: str
+    _number: str
 
     @property
-    def id_car(self) -> int:
-        return self._id_car
+    def id(self) -> int:
+        return self._id
 
     @property
     def brand(self) -> str:
@@ -20,5 +20,5 @@ class Car:
         return self._model
 
     @property
-    def number_car(self) -> str:
-        return self._number_car
+    def number(self)-> str:
+        return self._number

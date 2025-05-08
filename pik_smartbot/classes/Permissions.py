@@ -1,0 +1,3 @@
+
+class Permissions:
+    id: int

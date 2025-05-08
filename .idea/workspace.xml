@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Workstation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Anchous-GIT"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Anchous-GIT/course-project-smartbot.git",
+    "accountId": "e628ede8-a7b7-4423-83e4-23996046015b"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
 }]]></component>
@@ -39,8 +54,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -60,5 +75,16 @@
       <updated>1746697283639</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

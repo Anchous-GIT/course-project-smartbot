@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="написала car, departament, workstation, начала user">
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/Citizenship.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/Role.py" afterDir="false" />
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="ред user">
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/dto/UserRegistrationDTO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/Position.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746724513030</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ред user">
+      <option name="closed" value="true" />
+      <created>1746728891368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746728891368</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="написала car, departament, workstation, начала user" />
-    <option name="LAST_COMMIT_MESSAGE" value="написала car, departament, workstation, начала user" />
+    <MESSAGE value="ред user" />
+    <option name="LAST_COMMIT_MESSAGE" value="ред user" />
   </component>
 </project>

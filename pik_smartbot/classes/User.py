@@ -47,11 +47,9 @@ class User:
     def citizenship(self) -> Optional[Citizenship]:
         return self._citizenship
 
-#_____________ Исправить position после определения класса или enum
     @property
-    def position(self) -> str:
-        return self._position if self._position else "Не назначена"
-#________________________________________________________
+    def position(self) -> Optional[Position]:
+        return self._position
 
     def add_car(self, car: Car):
         self._cars.append(car)
@@ -90,6 +88,19 @@ class User:
     @role.setter
     def role(self, role: Role):
         self._role = role
+
+    @property
+    def token(self) -> Optional[Token]:
+        return self._token
+
+    @token.setter
+    def token(self, token: Token):
+        self._token = token
+
+    def is_on_probation(self) -> bool:
+        if not self._probation_start:
+            return False
+        return (datetime.now()-self._probation_start).days < 90
 
 
 

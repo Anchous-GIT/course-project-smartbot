@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class Role(Enum):
+class RoleEnum(Enum):
     DIRECTOR = "Директор"
     HEAD_OF_DEPARTMENT = "Начальник отдела"
     STUDENT = "Студент"

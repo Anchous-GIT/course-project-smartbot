@@ -1,18 +1,17 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional, List
-from pik_smartbot.classes import Departament, Workstation, Position, Token, Car
-from pik_smartbot.enums import Role
-from pik_smartbot.enums.Citizenship import Citizenship
+from pik_smartbot.classes import Departament, Workstation, Position, Token, Car, Role
+from pik_smartbot.enums.CitizenshipEnum import CitizenshipEnum
 
 
 @ dataclass
 class User:
     _id: int
     _full_name: str
+    _citizenship: str #Гражданство
     _cars: List[Car] = field(default_factory=list)
     _birth_date: Optional[datetime] = None
-    _citizenship: Optional[Citizenship] = None #Гражданство
     _owns_car: Optional[bool] = None #Наличие машины
     _departament: Optional[Departament] = None #Отдел сотрудника
     _workstation: Optional[Workstation] = None
@@ -44,12 +43,20 @@ class User:
         self._birth_date = birth_date
 
     @property
-    def citizenship(self) -> Optional[Citizenship]:
+    def citizenship(self) -> str:
         return self._citizenship
+
+    @citizenship.setter
+    def citizenship(self, citizenship: CitizenshipEnum):
+         self._citizenship = citizenship.name
 
     @property
     def position(self) -> Optional[Position]:
         return self._position
+
+    @position.setter
+    def position(self, position: Position):
+        self._position = position
 
     def add_car(self, car: Car):
         self._cars.append(car)

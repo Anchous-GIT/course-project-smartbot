@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="ред user">
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/dto/UserRegistrationDTO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/Position.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="работаю над сервисом  AccessControlService">
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/PermissionsEnum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/RequestEnum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Permissions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/dto/UserRegistrationDTO.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/dto/UserRegistrationDTO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/enums/Citizenship.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/enums/CitizenshipEnum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/enums/Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/enums/PositionEnum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/enums/Role.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/enums/RoleEnum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,34 +37,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Anchous-GIT"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Anchous-GIT&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Anchous-GIT/course-project-smartbot.git",
-    "accountId": "e628ede8-a7b7-4423-83e4-23996046015b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Anchous-GIT/course-project-smartbot.git&quot;,
+    &quot;accountId&quot;: &quot;e628ede8-a7b7-4423-83e4-23996046015b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2wo9ulxNocy4kKJFUJpSCWosUo2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746728891368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="работаю над сервисом  AccessControlService">
+      <option name="closed" value="true" />
+      <created>1746813330807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746813330807</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="написала car, departament, workstation, начала user" />
     <MESSAGE value="ред user" />
-    <option name="LAST_COMMIT_MESSAGE" value="ред user" />
+    <MESSAGE value="работаю над сервисом  AccessControlService" />
+    <option name="LAST_COMMIT_MESSAGE" value="работаю над сервисом  AccessControlService" />
   </component>
 </project>

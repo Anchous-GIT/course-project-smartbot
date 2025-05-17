@@ -16,8 +16,10 @@ class Token:
     def create_at(self) -> datetime:
         return self._create_at
 
+    #Проверяем действителен ли токен
     def is_expired(self) -> bool:
         return datetime.now(timezone.utc) > self._create_at + timedelta(hours=12)
+
 
     def update(self):
         self._token = str(uuid.uuid4())

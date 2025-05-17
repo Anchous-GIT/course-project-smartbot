@@ -16,9 +16,10 @@ class UserService:
         user.department = user_date.department
         return user
 
-    def update_user(self, user: User, user_date: UserRegistrationDTO) -> User:
-        user.full_name = user_date.full_name
-        user.birth_date = user_date.birth_date
+
+    #Настроить на обновление все инфы в бд
+    def update_user(user: User) -> User:
+       metod = "пустышка"
 
 
 

@@ -2,21 +2,32 @@ from dataclasses import dataclass
 
 from pik_smartbot.classes.Token import Token
 from pik_smartbot.classes.User import User
+from pik_smartbot.enums.PermissionsEnum import PermissionsEnum
+
 
 @dataclass
 class AccessControlService:
-
-    #Прикрепляем токен
-
-    def assign_token(self, user: User):
+    # Назначить новый токен, если его нет или он просрочен
+    def assign_token(self, user: User) -> None:
         if user.token is None or user.token.is_expired():
-            new_token = Token()
-            user.token = new_token
+            user.token = Token()
         else:
-            return ValueError (f"Ошибка. У пользователя существует действительный токен {user.token}")
+            raise ValueError(f"У пользователя уже есть действительный токен: {user.token.token}")
 
+    # Добавить разрешение к токену пользователя
+    def add_permission_token(self, user: User, permission: PermissionsEnum) -> bool:
+        if user.token:
+            return user.token.add_permission(permission)
+        raise ValueError("Пользователь не имеет назначенного токена")
 
-    def permission_token(self, User: User):
+    # Удалить разрешение из токена пользователя
+    def remove_permission_token(self, user: User, permission: PermissionsEnum) -> bool:
+        if user.token:
+            return user.token.remove_permission(permission)
+        raise ValueError("Пользователь не имеет назначенного токена")
 
-
-
+    # Проверить, содержит ли токен пользователя определенное разрешение
+    def check_permission_token(self, user: User, permission: PermissionsEnum) -> bool:
+        if user.token:
+            return user.token.check_permission(permission)
+        return False

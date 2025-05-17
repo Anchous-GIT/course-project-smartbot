@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-@ dataclass
+@dataclass
 class Car:
     _id: int
     _brand: str

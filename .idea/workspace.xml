@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="работаю над сервисом  AccessControlService">
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/Request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/PermissionsEnum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/RequestEnum.py" afterDir="false" />
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно">
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Permissions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/dto/UserRegistrationDTO.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/dto/UserRegistrationDTO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/enums/Citizenship.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/enums/CitizenshipEnum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/enums/Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/enums/PositionEnum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/enums/Role.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/enums/RoleEnum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
     </list>
@@ -109,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746813330807</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно">
+      <option name="closed" value="true" />
+      <created>1747472104527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747472104527</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +126,7 @@
     <MESSAGE value="написала car, departament, workstation, начала user" />
     <MESSAGE value="ред user" />
     <MESSAGE value="работаю над сервисом  AccessControlService" />
-    <option name="LAST_COMMIT_MESSAGE" value="работаю над сервисом  AccessControlService" />
+    <MESSAGE value="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно" />
   </component>
 </project>

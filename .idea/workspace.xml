@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно">
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" afterDir="false" />
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="Остались сервисы: UserService.py, Notification, Database, Request&#10;&#10;Публикую">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/AccessControlService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +31,12 @@
     &quot;assignee&quot;: &quot;Anchous-GIT&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Anchous-GIT/course-project-smartbot.git&quot;,
-    &quot;accountId&quot;: &quot;e628ede8-a7b7-4423-83e4-23996046015b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Anchous-GIT/course-project-smartbot.git",
+    "accountId": "e628ede8-a7b7-4423-83e4-23996046015b"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -57,7 +54,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/igumn/OneDrive/Документы/2 курс/4 семестр/ООП/Бот/ТГ-БОТ/.venv&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
   }
 }</component>
   <component name="SharedIndexes">
@@ -108,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747472104527</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Остались сервисы: UserService.py, Notification, Database, Request">
+      <option name="closed" value="true" />
+      <created>1747490773840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747490773840</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +138,7 @@
     <MESSAGE value="ред user" />
     <MESSAGE value="работаю над сервисом  AccessControlService" />
     <MESSAGE value="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно" />
+    <MESSAGE value="Остались сервисы: UserService.py, Notification, Database, Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Остались сервисы: UserService.py, Notification, Database, Request" />
   </component>
 </project>

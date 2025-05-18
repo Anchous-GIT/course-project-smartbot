@@ -17,7 +17,7 @@ class Car:
 
     @property
     def model(self) -> str:
-        return self._model
+        return   self._model
 
     @property
     def number(self)-> str:

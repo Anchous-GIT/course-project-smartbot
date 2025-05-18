@@ -17,7 +17,6 @@ class Departament:
     def name(self)-> str:
         return self._name
 
-
     @name.setter
     def name(self,name_departament:str) -> None:
         if not isinstance(name_departament,str) or not name_departament.strip():

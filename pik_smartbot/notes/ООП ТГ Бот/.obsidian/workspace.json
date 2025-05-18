@@ -1,0 +1,323 @@
+{
+  "main": {
+    "id": "8c01e27b32d6e7c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "929b963124b062e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68f3f755e960ae7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Классы/UserClass.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UserClass"
+            }
+          },
+          {
+            "id": "5c6e788fa096665a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Классы/WorkstationClass.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WorkstationClass"
+            }
+          },
+          {
+            "id": "2aafcda8bb191fa2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Классы/CarClass.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CarClass"
+            }
+          },
+          {
+            "id": "51289b556f801394",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Классы/TokenClass.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TokenClass"
+            }
+          },
+          {
+            "id": "5886909c03eb9543",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Отчет по работе/2025-05-16.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-16"
+            }
+          },
+          {
+            "id": "4e0da1068e6faf25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Общая структура/Общий обзор проекта.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Общий обзор проекта"
+            }
+          },
+          {
+            "id": "b3525999e5038948",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Общая структура/18.05.2025 Реализованная диаграмма.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "18.05.2025 Реализованная диаграмма"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "80fa62296a13a71a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4df013a9dacff3ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "220c9e70148b0f29",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "925357fb7554344d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "e3532603ed6ff657",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 254.5
+  },
+  "right": {
+    "id": "7fbdc6a4e3b5501d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c2a58847aefb6ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4630efc82f864ff7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Добро пожаловать"
+            }
+          },
+          {
+            "id": "1489492e3648a5cc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Добро пожаловать"
+            }
+          },
+          {
+            "id": "c86555124bb84fef",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "626b3fc0a99cf15a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Классы/WorkstationClass.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура WorkstationClass"
+            }
+          },
+          {
+            "id": "866867f8d4b879ca",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "8468927fe0703e7e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 281.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "workspaces:Пространства": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "b3525999e5038948",
+  "lastOpenFiles": [
+    "Общая структура/Общий обзор проекта.md",
+    "Общая структура/18.05.2025 Реализованная диаграмма.md",
+    "Enums/Role.md",
+    "Enums/Citizenship.md",
+    "Классы/WorkstationClass.md",
+    "Enums/Position.md",
+    "Enums/Request.md",
+    "Enums/Permissions.md",
+    "Сервисы/UserServise.md",
+    "Сервисы/DepartamentService.md",
+    "Сервисы/AccessControlService.md",
+    "Классы/UserClass.md",
+    "Token.md",
+    "Классы/TokenClass.md",
+    "Классы/RoleClass.md",
+    "Классы/RequestClass.md",
+    "Классы/PositionClass.md",
+    "Классы/DepartamentClass.md",
+    "Классы/CarClass.md",
+    "Классы/UserPermissionsClass.md",
+    "Шаблоны/Шаблон.md",
+    "Общая структура/Без названия.canvas",
+    "Отчет по работе/2025-05-16.md",
+    "Отчет по работе/Без названия.md",
+    "Без названия.md",
+    "Отчет по работе",
+    "2025-05-15.md",
+    "RelatedClass1.md",
+    "Шаблоны",
+    "Enums",
+    "Контейнер с данными (DTO)",
+    "Классы/Без названия",
+    "Сервисы/Без названия.canvas",
+    "Общая структура",
+    "Сервисы",
+    "Классы"
+  ]
+}

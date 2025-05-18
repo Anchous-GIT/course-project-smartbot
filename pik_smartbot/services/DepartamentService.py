@@ -40,8 +40,8 @@ class DepartamentService:
         departament.remove_workstation(workstation)
         return departament
 
-    def remove_workstation_from_departament_id(self, departament: Departament, id_departament: int) -> Departament:
-        departament.remove_workstation_by_id(id_departament)
+    def remove_workstation_from_departament_id(self, departament: Departament, id_workstation: int) -> Departament:
+        departament.remove_workstation_by_id(id_workstation)
         return departament
 
     def list_workstations_in_departament(self, departament: Departament) -> list[Workstation]:

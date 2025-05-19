@@ -2,6 +2,8 @@ import datetime
 import logging
 from dataclasses import dataclass, field
 
+from typing_extensions import Optional
+
 from pik_smartbot.classes.User import User
 from pik_smartbot.enums.CitizenshipEnum import CitizenshipEnum
 
@@ -52,6 +54,11 @@ class UserService:
         self.update_user(user)
         return user
 
+    def remove_user(self, user: User) -> None:
+        self.user_verification(user)
+        self._users.remove(user)
+        logging.info(f"Removed user with ID {user.id}")
+
     def update_telegram_id(self, user: User, telegram_id: int) -> User:
         self.user_verification(user)
         user.telegram_id = telegram_id
@@ -59,11 +66,20 @@ class UserService:
         self.update_user(user)
         return user
 
-    def rename_user(self, user: User, full_name: str) -> User:
+    def rename(self, user: User, full_name: str) -> User:
         self.user_verification(user)
         user.full_name = full_name
         self.update_user(user)
         return user
 
+
+
+
+    def get_user_by_id(self, id_user: int) -> Optional[User]:
+        if not isinstance(id_user, int) or id_user < 0:
+            raise ValueError("Некорректный ID")
+        for user in self._users:
+            if user.id == id_user:
+                return user
 
 

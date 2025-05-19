@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="+ еще полтора сервиса">
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="классы и сервисы, которые готовы (кроме заглушек TODO)&#10;User, UserService.py. Departament.py, DepartamentService.py">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/business/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/business/business_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/TelegramBotService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smart_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Workstation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Workstation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Общая структура/Общий обзор проекта.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Общая структура/Общий обзор проекта.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
     </list>
@@ -52,18 +67,102 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.SmartBotService (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.SmartBotService.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TelegramBotService.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/igumn/OneDrive/Документы/2 курс/4 семестр/ООП/Бот/ТГ-БОТ/.venv&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/igumn/OneDrive/Документы/2_курс/4_семестр/ООП/Бот/ТГ-БОТ&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\igumn\OneDrive\Документы\2_курс\4_семестр\ООП\Бот\ТГ-БОТ" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ТГ-БОТ" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ТГ-БОТ" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pik_smartbot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\igumn\OneDrive\Документы\2_курс\4_семестр\ООП\Бот\ТГ-БОТ\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ТГ-БОТ" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\igumn\OneDrive\Документы\2_курс\4_семестр\ООП\Бот\ТГ-БОТ\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -136,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747582893881</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="классы и сервисы, которые готовы (кроме заглушек TODO)&#10;User, UserService.py. Departament.py, DepartamentService.py">
+      <option name="closed" value="true" />
+      <created>1747631104643</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747631104643</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +265,7 @@
     <MESSAGE value="Остались сервисы: UserService.py, Notification, Database, Request" />
     <MESSAGE value="Добавила документацию&#10;&#10;там есть код для диаграммы в плант юмл&#10;от сегодняшнего числа глянуть лучше - там то, что реализованно" />
     <MESSAGE value="+ еще полтора сервиса" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ еще полтора сервиса" />
+    <MESSAGE value="классы и сервисы, которые готовы (кроме заглушек TODO)&#10;User, UserService.py. Departament.py, DepartamentService.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="классы и сервисы, которые готовы (кроме заглушек TODO)&#10;User, UserService.py. Departament.py, DepartamentService.py" />
   </component>
 </project>

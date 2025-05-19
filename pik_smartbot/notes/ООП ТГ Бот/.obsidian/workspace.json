@@ -83,26 +83,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Общая структура/Общий обзор проекта.md",
+                "file": "Общая структура/18.05.2025 Реализованная диаграмма.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Общий обзор проекта"
+              "title": "18.05.2025 Реализованная диаграмма"
             }
           },
           {
-            "id": "b3525999e5038948",
+            "id": "bc18506bc86c7b71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Общая структура/Общий обзор проекта.md",
+                "file": "Основные объекты библиотеки.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Общий обзор проекта"
+              "title": "Основные объекты библиотеки"
             }
           },
           {
@@ -111,16 +111,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Валидация данных.md",
+                "file": "Сервисы/TelegramBotService.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Валидация данных"
+              "title": "TelegramBotService"
+            }
+          },
+          {
+            "id": "689da71ad4591483",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -270,8 +280,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
             }
           }
         ],
@@ -295,11 +305,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "58e0d0adc2901152",
+  "active": "689da71ad4591483",
   "lastOpenFiles": [
+    "Сервисы/TelegramBotService.md",
+    "Pasted image 20250519130739.png",
     "Общая структура/Общий обзор проекта.md",
-    "Валидация данных.md",
+    "Основные объекты библиотеки.md",
     "Общая структура/18.05.2025 Реализованная диаграмма.md",
+    "Основные объекты библиотеки telegram",
+    "Валидация данных.md",
     "Enums/Role.md",
     "Enums/Citizenship.md",
     "Классы/WorkstationClass.md",
@@ -321,10 +335,7 @@
     "Шаблоны/Шаблон.md",
     "Общая структура/Без названия.canvas",
     "Отчет по работе/2025-05-16.md",
-    "Отчет по работе/Без названия.md",
     "Отчет по работе",
-    "2025-05-15.md",
-    "RelatedClass1.md",
     "Шаблоны",
     "Enums",
     "Контейнер с данными (DTO)",

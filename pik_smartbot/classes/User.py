@@ -17,8 +17,8 @@ class User:
     _telegram_id: int
     _full_name: str
     _citizenship: CitizenshipEnum #Гражданство
+    _birth_date: datetime
     _cars: List[Car] = field(default_factory=list)
-    _birth_date: Optional[datetime] = None
     _owns_car: Optional[bool] = None #Наличие машины
     _departament: Optional[Departament] = None #Отдел сотрудника
     _workstation: Optional[Workstation] = None
@@ -27,20 +27,20 @@ class User:
     _probation_start: Optional[datetime] = None # дата начала испытательного срока
     _token: Optional[Token] = None
 
-
-    def __post_init__(self):
-        if not isinstance(self._id, int) or self._id < 0:
-            raise ValueError ("Некорректный ID пользователя")
-        if not isinstance(self._telegram_id, int) or self._telegram_id < 0:
-            raise ValueError ("Некорректный ID телеграмма")
-        if not isinstance(self._full_name, str) or self._full_name.strip() == "":
-            raise ValueError("Некорректное ФИО пользователя")
-        if not isinstance(self._citizenship, CitizenshipEnum):
-            raise ValueError("Гражданство пользователя не является объектом класса CitizenshipEnum")
-        if self._owns_car is None:
-            self._owns_car = False
-        if not self._probation_start:
-            self._probation_start = datetime.now()
+    @classmethod
+    def create(cls, id_user: int, telegram_id: int, full_name: str, birth_date: datetime, citizenship: CitizenshipEnum, owns_car: bool = False,
+               probation_start=None):
+        if not (isinstance(id_user, int) and id_user >= 0):
+            raise ValueError("Invalid user ID")
+        if not (isinstance(telegram_id, int) and telegram_id >= 0):
+            raise ValueError("Invalid telegram ID")
+        if not (isinstance(full_name, str) and full_name.strip()):
+            raise ValueError("Invalid full name")
+        if not (isinstance(birth_date, datetime) and birth_date.year >= 1920):
+            raise ValueError("Invalid birth date")
+        if not isinstance(citizenship, CitizenshipEnum):
+            raise ValueError("Invalid citizenship")
+        return cls(_id=id_user, _telegram_id=telegram_id, _full_name=full_name, _citizenship=citizenship,_birth_date=birth_date, _owns_car=owns_car, _probation_start=probation_start)
 
     @property
     def id(self) -> int:
@@ -52,7 +52,7 @@ class User:
 
     @telegram_id.setter
     def telegram_id(self, telegram_id: int):
-        if isinstance(telegram_id, int) or telegram_id < 0:
+        if not isinstance(telegram_id, int) or telegram_id < 0:
             raise ValueError("Некорректный ID telegram")
         self._telegram_id = telegram_id
 
@@ -120,6 +120,8 @@ class User:
 
     @departament.setter
     def departament(self, departament: Departament):
+        if not isinstance(departament, Departament):
+            raise ValueError("Передаваемый отдел пользователя не является объектом класса Departament")
         self._departament = departament
 
     @property

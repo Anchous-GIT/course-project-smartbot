@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="Добавила документацию&#10;&#10;там есть код для диаграммы в плант юмл&#10;от сегодняшнего числа глянуть лучше - там то, что реализованно">
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/NotificationService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/services/RequestService.py" afterDir="false" />
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="+ еще полтора сервиса">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
     </list>
@@ -34,12 +32,12 @@
     &quot;assignee&quot;: &quot;Anchous-GIT&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Anchous-GIT/course-project-smartbot.git",
-    "accountId": "e628ede8-a7b7-4423-83e4-23996046015b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Anchous-GIT/course-project-smartbot.git&quot;,
+    &quot;accountId&quot;: &quot;e628ede8-a7b7-4423-83e4-23996046015b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -130,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747551397107</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="+ еще полтора сервиса">
+      <option name="closed" value="true" />
+      <created>1747582893881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747582893881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +157,7 @@
     <MESSAGE value="Прописала все классы, добавила еще enum несколько, добавила папку note, там структуру описываю через приложение obsidian для наглядности, если просто открыть, то тоже будет все понятно" />
     <MESSAGE value="Остались сервисы: UserService.py, Notification, Database, Request" />
     <MESSAGE value="Добавила документацию&#10;&#10;там есть код для диаграммы в плант юмл&#10;от сегодняшнего числа глянуть лучше - там то, что реализованно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила документацию&#10;&#10;там есть код для диаграммы в плант юмл&#10;от сегодняшнего числа глянуть лучше - там то, что реализованно" />
+    <MESSAGE value="+ еще полтора сервиса" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ еще полтора сервиса" />
   </component>
 </project>

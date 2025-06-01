@@ -12,7 +12,7 @@ from services.AccessControlService import AccessControlService
 
 
 def main():
-    app = ApplicationBuilder().token("8101451994:AAH62ZFSwJihwucdpkSz29U5McKLAs9Oznw").build()
+    app = ApplicationBuilder().token("").build()
     business_service = BusinessService(
         user_svc=UserService(),
         request_svc=RequestService(),

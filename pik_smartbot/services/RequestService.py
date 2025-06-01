@@ -1,7 +1,8 @@
 import logging
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Tuple
 
+from database.Database import db
 from pik_smartbot.classes.Request import Request
 from pik_smartbot.classes.User import User
 from pik_smartbot.enums.RequestEnum import RequestEnum, RequestStatusEnum
@@ -12,36 +13,33 @@ from pik_smartbot.enums.RequestEnum import RequestEnum, RequestStatusEnum
 
 @dataclass
 class RequestService:
-    _request_list: list[Request] = field(default_factory=list)
 
-    def create_request(self, id_request: int, user: User, type: RequestEnum) -> Request:
-        if not isinstance(id_request, int) or id_request < 0:
-            raise ValueError ("Некорректный ID.")
-        if id_request in [request.id for request in self._request_list]:
-            raise ValueError (f"Заявка с ID {id_request} уже существует.")
-        if not isinstance(user, User):
-            raise ValueError("user не принадлежит классу User")
-        if not isinstance(type, RequestEnum):
-            raise ValueError("Тип заявки не принадлежит классу RequestEnum")
-        request = Request(_id=id_request, _user=user, _type=type, _status=RequestStatusEnum.PENDING)
-        self._request_list.append(request)
-        logging.info(f"Created request '{type.name}' with ID {id_request}")
+    @staticmethod
+    def request_verification(request: Request):
+        if not isinstance(request, Request):
+            raise ValueError("Request is not an instance of Request class")
+        if not request.id:
+            raise ValueError("Request ID is required")
+        if not request.type:
+            raise ValueError("Request type is required")
+        if not request.user:
+            raise ValueError("Request user is required")
+
+    @staticmethod
+    def update_request(request: Request) -> Request:
+        RequestService.request_verification(request)
+        logging.info(f"Updated request '{request.type.name}' with ID {request.id}")
         return request
 
-    def get_request_by_id(self, id_request: int) -> Request:
-        if not isinstance(id_request, int) or id_request < 0:
-            raise ValueError("Некорректный ID")
-        for request in self._request_list:
-            if request.id == id_request:
-                return request
-        raise ValueError("Заявка не найдена")
-
-    @property
-    def request_list(self) -> list[Request]:
-        return self._request_list
+    def create_request(self, user: User, type_enum: RequestEnum, value_request:str) -> Request:
+        request = Request.create(user, type_enum, value_request)
+        db.add_request(request)
+        logging.info(f"Created request '{type_enum.name}' with ID {request.id}")
+        self.update_request(request)
+        return request
 
     def state_by_id(self, id_request: int) -> Tuple[int, RequestEnum, RequestStatusEnum, User]:
-        request = self.get_request_by_id(id_request)
+        request = db.get_request_by_id(id_request)
         return request.id, request.type, request.status, request.user
 
     def update_status_request(self, id_request: int, status: RequestStatusEnum) -> None:
@@ -49,7 +47,7 @@ class RequestService:
             raise ValueError("Некорректный ID")
         if not isinstance(status, RequestStatusEnum):
             raise ValueError("Тип статуса не принадлежит классу RequestStatusEnum")
-        request = self.get_request_by_id(id_request)
+        request = db.get_request_by_id(id_request)
         request.status = status
         logging.info(f"Updated status of request '{request.type.name}' with ID {id_request} to '{status.name}'")
 

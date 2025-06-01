@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
-from pik_smartbot.classes.Workstation import Workstation
+from classes.Workstation import Workstation
+from database.IdGeneration import id_gen
+
 
 #Даем возможность менять имя отдела, добавлять/удалять рабочие места
 @ dataclass
@@ -9,14 +11,50 @@ class Departament:
     _name: str
     _workstations: List["Workstation"] = field(default_factory=list)
 
+    def to_dict(self) -> dict:
+        return {
+            "id": self._id,
+            "name": self._name,
+            "workstations": [ws.to_dict() for ws in self._workstations]
+        }
+
     @classmethod
-    def create(cls, id_workstation: int, name: str, workstations: list["Workstation"] = None):
-        if not isinstance(id_workstation, int) or id_workstation < 0:
-            raise ValueError("Некорректный ID отдела")
+    def from_dict(cls, data: dict):
+        id_departament = data.get("id")
+        if not isinstance(id_departament, int) or id_departament < 0:
+            raise ValueError("Invalid department ID")
+
+        name = data.get("name")
         if not isinstance(name, str) or not name.strip():
-            raise ValueError("Некорректное наименование отдела")
-        workstations = workstations or []
-        return cls(id_workstation, name, workstations)
+            raise ValueError("Invalid department name")
+
+        workstations_data = data.get("workstations", [])
+        if not isinstance(workstations_data, list):
+            raise ValueError("Workstations should be a list")
+
+        workstations = []
+        for ws_data in workstations_data:
+            if not isinstance(ws_data, dict):
+                raise ValueError("Invalid workstation data")
+            workstation = Workstation.from_dict(ws_data)  # <-- важный момент
+            workstations.append(workstation)
+
+        return cls(id_departament, name, workstations)
+
+    @classmethod
+    def create(cls, name: str, workstations: list["Workstation"] = None):
+        id_departament = id_gen.get_next_departament_id()
+
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError("Invalid department name")
+
+        # Если workstations — None, заменим на пустой список
+        if workstations is None:
+            workstations = []
+        elif not isinstance(workstations, list) or not all(isinstance(ws, Workstation) for ws in workstations):
+            raise ValueError("Invalid list of workstations")
+
+        return cls(_id=id_departament, _name=name, _workstations=workstations)
 
     @property
     def id(self)-> int:
@@ -41,21 +79,19 @@ class Departament:
             raise TypeError("Должен быть передан объект класса Workstation")
         self._workstations.append(workstation)
 
+    def _remove_workstation(self, predicate) -> None:
+        for ws in self._workstations:
+            if predicate(ws):
+                self._workstations.remove(ws)
+                return
+        raise ValueError("Workstation not found.")
+
     def remove_workstation_by_id(self, id_workstation: int) -> None:
         if not isinstance(id_workstation, int) or id_workstation < 0:
             raise ValueError("Некорректный ID места")
-        for workstation in self._workstations:
-            if workstation.id == id_workstation:
-                self._workstations.remove(workstation)
-                return
-        raise ValueError(f"Место с ID {id_workstation} не найдено.")
+        self._remove_workstation(lambda ws: ws.id == id_workstation)
 
     def remove_workstation(self, workstation: Workstation) -> None:
-        if not isinstance(workstation,Workstation):
-            raise ValueError("Место пользователя не является объектом класса Workstation")
-        for workstations in self._workstations:
-            if workstations == workstation:
-                self._workstations.remove(workstation)
-                return
-        raise ValueError(f"Место с ID {workstation.id} не найдено.")
-
+        if not isinstance(workstation, Workstation):
+            raise TypeError("Должен быть объект Workstation")
+        self._remove_workstation(lambda ws: ws == workstation)

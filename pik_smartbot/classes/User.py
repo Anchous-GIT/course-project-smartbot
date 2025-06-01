@@ -1,13 +1,14 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional, List
-from pik_smartbot.classes.Role import Role
-from pik_smartbot.classes.Position import Position
-from pik_smartbot.classes.Car import Car
-from pik_smartbot.classes.Token import Token
-from pik_smartbot.classes.Departament import Departament
-from pik_smartbot.classes.Workstation import Workstation
-from pik_smartbot.enums.CitizenshipEnum import CitizenshipEnum
+
+from classes.Car import Car
+from classes.Departament import Departament
+from classes.Position import Position
+from classes.Role import Role
+from classes.Token import Token
+from classes.Workstation import Workstation
+from enums.CitizenshipEnum import CitizenshipEnum
 
 """Добавить проверку типов, обязательности, форматов"""
 
@@ -27,6 +28,99 @@ class User:
     _probation_start: Optional[datetime] = None # дата начала испытательного срока
     _token: Optional[Token] = None
 
+    def to_dict(self) -> dict:
+        return {
+            "id": self.id,
+            "telegram_id": self.telegram_id,
+            "full_name": self.full_name,
+            "citizenship": self.citizenship.value,
+            "birth_date": self.birth_date.isoformat() if self.birth_date else None,
+            "cars": [car.to_dict() for car in self.cars],
+            "owns_car": self._owns_car,
+            "departament": self.departament.name if self.departament else None,
+            "workstation": self.workstation.number if self.workstation else None,
+            "role": self.role.to_dict() if self.role else None,
+            "position": self.position.to_dict() if self.position else None,
+            "probation_start": self._probation_start.isoformat() if self._probation_start else None,
+            "token": self.token.to_dict() if self.token else None,
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict):
+        # Проверки на обязательные поля
+        if not isinstance(data.get("id"), int) or data["id"] < 0:
+            raise ValueError("Invalid user ID")
+        if not isinstance(data.get("telegram_id"), int) or data["telegram_id"] < 0:
+            raise ValueError("Invalid telegram ID")
+        full_name = data.get("full_name")
+        if not isinstance(full_name, str) or not full_name.strip():
+            raise ValueError("Invalid full name")
+        birth_date_str = data.get("birth_date")
+        if not isinstance(birth_date_str, str):
+            raise ValueError("Invalid birth date format")
+        # Convert birth_date string to datetime
+        try:
+            birth_date = datetime.fromisoformat(birth_date_str)
+        except Exception as e:
+            raise ValueError(f"Invalid birth_date format: {e}")
+
+        citizenship_str = data.get("citizenship")
+        try:
+            citizenship = CitizenshipEnum(citizenship_str)
+        except KeyError:
+            raise ValueError(f"Invalid citizenship value: {citizenship_str}")
+
+        # Convert cars list of dicts to list of Car objects
+        cars_data = data.get("cars", [])
+        if not isinstance(cars_data, list):
+            raise ValueError("Invalid cars list")
+        cars = [Car.from_dict(car_dict) for car_dict in cars_data]
+
+        # Optional fields
+        owns_car = data.get("owns_car")
+        if owns_car is not None and not isinstance(owns_car, bool):
+            raise ValueError("Invalid owns_car flag")
+
+        # For departament, workstation, role, position, token - assume they have from_dict or similar
+        departament_data = data.get("departament")
+        departament = Departament.from_dict(departament_data) if departament_data else None
+
+        workstation_data = data.get("workstation")
+        workstation = Workstation.from_dict(workstation_data) if workstation_data else None
+
+        role_data = data.get("role")
+        role = Role.from_dict(role_data) if role_data else None
+
+        position_data = data.get("position")
+        position = Position.from_dict(position_data) if position_data else None
+
+        probation_start_str = data.get("probation_start")
+        probation_start = None
+        if probation_start_str:
+            try:
+                probation_start = datetime.fromisoformat(probation_start_str)
+            except Exception as e:
+                raise ValueError(f"Invalid probation_start format: {e}")
+
+        token_data = data.get("token")
+        token = Token.from_dict(token_data) if token_data else None
+
+        return cls(
+            _id=data["id"],
+            _telegram_id=data["telegram_id"],
+            _full_name=full_name,
+            _citizenship=citizenship,
+            _birth_date=birth_date,
+            _cars=cars,
+            _owns_car=owns_car,
+            _departament=departament,
+            _workstation=workstation,
+            _role=role,
+            _position=position,
+            _probation_start=probation_start,
+            _token=token,
+        )
+
     @classmethod
     def create(cls, id_user: int, telegram_id: int, full_name: str, birth_date: datetime, citizenship: CitizenshipEnum, owns_car: bool = False,
                probation_start=None):
@@ -38,8 +132,8 @@ class User:
             raise ValueError("Invalid full name")
         if not (isinstance(birth_date, datetime) and birth_date.year >= 1920):
             raise ValueError("Invalid birth date")
-        if not isinstance(citizenship, CitizenshipEnum):
-            raise ValueError("Invalid citizenship")
+ #       if not isinstance(citizenship, CitizenshipEnum):
+  #          raise ValueError(f"Invalid citizenship, {citizenship}")
         return cls(_id=id_user, _telegram_id=telegram_id, _full_name=full_name, _citizenship=citizenship,_birth_date=birth_date, _owns_car=owns_car, _probation_start=probation_start)
 
     @property
@@ -93,7 +187,7 @@ class User:
     @position.setter
     def position(self, position: Position):
         if not isinstance(position, Position):
-            raise ValueError("Позиция пользователя не является объектом класса Position")
+            raise ValueError("Должность пользователя не является объектом класса Position")
         self._position = position
 
     def add_car(self, car: Car):
@@ -136,7 +230,7 @@ class User:
 
     @property
     def role(self) -> Optional[Role]:
-        return self._role if self._role else "Не задана"
+        return self._role
 
     @role.setter
     def role(self, role: Role):

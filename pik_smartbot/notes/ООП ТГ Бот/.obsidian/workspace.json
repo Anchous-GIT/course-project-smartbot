@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Общая структура/Общий обзор проекта.md",
+                "file": "Enums/Request.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Общий обзор проекта"
+              "title": "Request"
             }
           }
         ],
@@ -284,8 +284,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Плагин больше не активен"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -298,6 +298,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Создать новую базу": false,
       "markdown-importer:Импорт Markdown-файлов": false,
       "switcher:Меню быстрого перехода": false,
       "graph:Граф": false,
@@ -311,41 +312,41 @@
   },
   "active": "689da71ad4591483",
   "lastOpenFiles": [
-    "Общая структура/18.05.2025 Реализованная диаграмма.md",
+    "Enums/Position.md",
+    "Enums/Citizenship.md",
+    "Enums/Permissions.md",
+    "Сервисы/DepartamentService.md",
+    "Сервисы/UserServise.md",
+    "Сервисы/AccessControlService.md",
+    "Общая структура. Диаграммы/Общий обзор проекта.md",
+    "Отчет по работе/2025-05-16.md",
+    "Общая структура. Диаграммы/Без названия.canvas",
+    "Общая структура. Диаграммы/18.05.2025 Реализованная диаграмма.md",
+    "Enums/Role.md",
+    "Enums/Request.md",
+    "Классы/RequestClass.md",
+    "Классы/PositionClass.md",
+    "Классы/RoleClass.md",
+    "Классы/DepartamentClass.md",
+    "Классы/CarClass.md",
     "Сервисы/TelegramBotService.md",
     "Pasted image 20250519130739.png",
-    "Общая структура/Общий обзор проекта.md",
     "Основные объекты библиотеки.md",
     "Основные объекты библиотеки telegram",
     "Валидация данных.md",
-    "Enums/Role.md",
-    "Enums/Citizenship.md",
     "Классы/WorkstationClass.md",
-    "Enums/Position.md",
-    "Enums/Request.md",
-    "Enums/Permissions.md",
-    "Сервисы/UserServise.md",
-    "Сервисы/DepartamentService.md",
-    "Сервисы/AccessControlService.md",
     "Классы/UserClass.md",
     "Token.md",
     "Классы/TokenClass.md",
-    "Классы/RoleClass.md",
-    "Классы/RequestClass.md",
-    "Классы/PositionClass.md",
-    "Классы/DepartamentClass.md",
-    "Классы/CarClass.md",
     "Классы/UserPermissionsClass.md",
     "Шаблоны/Шаблон.md",
-    "Общая структура/Без названия.canvas",
-    "Отчет по работе/2025-05-16.md",
     "Отчет по работе",
     "Шаблоны",
     "Enums",
     "Контейнер с данными (DTO)",
     "Классы/Без названия",
     "Сервисы/Без названия.canvas",
-    "Общая структура",
+    "Общая структура. Диаграммы",
     "Сервисы",
     "Классы"
   ]

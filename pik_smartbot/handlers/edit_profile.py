@@ -39,15 +39,19 @@ async def start_edit_profile(update: Update, context: ContextTypes.DEFAULT_TYPE)
         ["ФИО", "Дата рождения"],
         ["Гражданство", "Отдел"],
         ["Рабочее место", "Роль", "Должность"],
-        ["Завершить редактирование"]
+        ["Завершить редактирование","Отмена"]
     ]
-    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
     await update.message.reply_text("Что вы хотите изменить в профиле?", reply_markup=reply_markup)
     return CHOOSING_FIELD
 
 
 async def choose_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
     field = update.message.text
+
+    if field == "Отмена":
+        return await cancel_edit(update, context)
+
     if field == "Завершить редактирование":
         return await confirm_finish(update, context)
 
@@ -60,7 +64,8 @@ async def choose_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return EDITING_FIELD
 
 
-async def process_new_value(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def process_new_value(update: Update, context:
+ContextTypes.DEFAULT_TYPE):
     value = update.message.text
     field = context.user_data.get("edit_field")
 

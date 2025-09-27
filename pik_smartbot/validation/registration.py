@@ -28,11 +28,11 @@ def validate_birth_date(date_str: str) -> Tuple[bool, str]:
         return False, "Неверный формат даты. Используйте ДД.ММ.ГГГГ"
 
 def validate_citizenship(value: str) -> Tuple[bool, str]:
-    try:
-        CitizenshipEnum(value.upper())
-        return True, ""
-    except KeyError:
-        return False, f"Недействительное гражданство. Выберите одно из: {', '.join([e.name for e in CitizenshipEnum])}"
+    value_clean = value.strip()
+    for c in CitizenshipEnum:
+        if c.value == value_clean:
+            return True, ""
+    return False, f"Недействительное гражданство. Выберите одно из: {', '.join([e.value for e in CitizenshipEnum])}"
 
 def validate_department(department: str) -> Tuple[bool, str]:
     valid_departments = [d.name for d in db.get_departaments_list.departaments]

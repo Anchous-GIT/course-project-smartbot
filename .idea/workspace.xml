@@ -4,10 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="+ бизнес-логика,">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="проверка на коммит">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/handlers/RegisterHandlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/handlers/RegisterHandlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/handlers/edit_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/handlers/edit_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/handlers/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/handlers/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/appearance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/core-plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/core-plugins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Citizenship.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Citizenship.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Permissions.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Permissions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Position.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Position.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Request.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Request.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Role.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Enums/Role.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/CarClass.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/CarClass.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/DepartamentClass.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/DepartamentClass.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/PositionClass.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/PositionClass.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/RequestClass.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/RequestClass.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/RoleClass.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Классы/RoleClass.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Общая структура/18.05.2025 Реализованная диаграмма.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Общая структура/Без названия.canvas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Общая структура/Общий обзор проекта.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Отчет по работе/2025-05-16.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Сервисы/AccessControlService.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Сервисы/AccessControlService.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Сервисы/DepartamentService.md" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/Сервисы/DepartamentService.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pik_smartbot/validation/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/validation/registration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +54,12 @@
     &quot;assignee&quot;: &quot;Anchous-GIT&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Anchous-GIT/course-project-smartbot.git",
-    "accountId": "9ea6afc4-9b78-464b-8254-de1cc0f55486"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Anchous-GIT/course-project-smartbot.git&quot;,
+    &quot;accountId&quot;: &quot;9ea6afc4-9b78-464b-8254-de1cc0f55486&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,25 +72,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Python.SmartBotService (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.SmartBotService.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TelegramBotService.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/igumn/OneDrive/Документы/2_курс/4_семестр/Проектирование и тестирование информационных систем/Лабораторная 1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python.SmartBotService (1).executor": "Run",
+    "Python.SmartBotService.executor": "Run",
+    "Python.TelegramBotService.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/igumn/OneDrive/Документы/2_курс/4_семестр/Проектирование и тестирование информационных систем/Лабораторная 1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\igumn\OneDrive\Документы\2_курс\4_семестр\ООП\Бот\ТГ-БОТ\pik_smartbot" />
@@ -236,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747671281312</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="проверка на коммит">
+      <option name="closed" value="true" />
+      <created>1758956595608</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758956595608</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +293,7 @@
     <MESSAGE value="+ еще полтора сервиса" />
     <MESSAGE value="классы и сервисы, которые готовы (кроме заглушек TODO)&#10;User, UserService.py. Departament.py, DepartamentService.py" />
     <MESSAGE value="+ бизнес-логика" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ бизнес-логика" />
+    <MESSAGE value="проверка на коммит" />
+    <option name="LAST_COMMIT_MESSAGE" value="проверка на коммит" />
   </component>
 </project>

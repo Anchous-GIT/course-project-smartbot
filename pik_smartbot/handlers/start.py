@@ -1,5 +1,5 @@
 from telegram import Update
-from telegram.ext import ContextTypes
+from telegram.ext import ContextTypes, CommandHandler
 
 from business.BusinessService import BusinessService
 
@@ -12,4 +12,4 @@ def get_handler(business_service: BusinessService):
             text=f"👋 Привет, {user.first_name}! Добро пожаловать!"
         )
 
-    return start_handler()
+    return CommandHandler("start", start_handler)

@@ -5,38 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d333f9-a249-418a-8a91-30e5b0a418d5" name="Changes" comment="+ бизнес-логика,">
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/classes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/database/Database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/database/IdGeneration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/enums/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/RegisterHandlers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/admin_confirmation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/edit_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/registration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/handlers/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/validation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pik_smartbot/validation/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/business/business_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/business/BusinessService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Car.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Departament.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Position.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Request.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Role.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/classes/Workstation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/classes/Workstation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/notes/ООП ТГ Бот/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/DepartamentService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/RequestService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/RequestService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/TelegramBotService.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/pik_smartbot/services/UserService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart_bot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ТГ-БОТ.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +30,12 @@
     &quot;assignee&quot;: &quot;Anchous-GIT&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Anchous-GIT/course-project-smartbot.git&quot;,
-    &quot;accountId&quot;: &quot;e628ede8-a7b7-4423-83e4-23996046015b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Anchous-GIT/course-project-smartbot.git",
+    "accountId": "9ea6afc4-9b78-464b-8254-de1cc0f55486"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
